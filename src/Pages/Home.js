@@ -12,7 +12,7 @@ function App() {
     try {
       const parsedInput = JSON.parse(jsonInput);
       const response = await axios.post(
-        "http://localhost:5000/bfhl",
+        "https://bajaj-api-backend-ziwd.onrender.com/bfhl",
         parsedInput
       );
       setResponseData(response.data);
